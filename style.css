@@ -16,7 +16,7 @@ body {
 }
 
 /* =========================
-   BASE
+   CONTAINER
 ========================= */
 
 .container {
@@ -24,6 +24,10 @@ body {
   max-width: 1100px;
   margin: auto;
 }
+
+/* =========================
+   LINK / IMG
+========================= */
 
 a {
   text-decoration: none;
@@ -52,15 +56,14 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0;
-  gap: 30px;
+  padding: 20px 0;
+  gap: 20px;
 }
 
 .logo a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #333;
-  white-space: nowrap;
 }
 
 /* =========================
@@ -69,28 +72,39 @@ img {
 
 .nav {
   display: flex;
-  gap: 18px;
   flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }
 
 .nav a {
-  color: #555;
+  padding: 8px 12px;
+  border-radius: 10px;
   font-size: 0.95rem;
-  transition: 0.3s;
-  white-space: nowrap;
+  color: #555;
+  transition: 0.25s;
 }
 
-.member-btn {
-  background: #f2b6c6;
-  color: #fff !important;
-  padding: 8px 14px;
-  border-radius: 999px;
+.nav a:hover {
+  background: rgba(242, 182, 198, 0.15);
+  color: #d97b92;
+}
+
+/* 現在ページ */
+.nav a.active {
+  background: rgba(242, 182, 198, 0.25);
+  color: #d97b92;
   font-weight: 600;
 }
 
-.member-btn:hover {
-  opacity: 0.85;
-  transform: translateY(-2px);
+/* 月額サポート */
+.member-btn {
+  background: linear-gradient(135deg, #f2b6c6, #e58ca0);
+  color: #fff !important;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(229, 140, 160, 0.25);
 }
 
 /* =========================
@@ -105,7 +119,7 @@ img {
   background-size: cover;
   background-position: center;
 
-  padding: 140px 20px;
+  padding: 120px 20px;
   text-align: center;
 }
 
@@ -116,22 +130,20 @@ img {
 
 .hero-sub {
   color: #d97b92;
-  font-size: 1rem;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .hero-title {
   font-size: 2.4rem;
   font-weight: 700;
-  line-height: 1.4;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #333;
 }
 
 .hero-text {
   font-size: 1.1rem;
   color: #666;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* =========================
@@ -140,7 +152,7 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 16px 36px;
+  padding: 14px 32px;
   border-radius: 999px;
   background: #8bc5a3;
   color: #fff;
@@ -149,7 +161,7 @@ img {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   opacity: 0.9;
 }
 
@@ -164,13 +176,13 @@ img {
 .content-section {
   background: #fff;
   margin: 40px auto;
-  padding: 60px 30px;
+  padding: 50px 25px;
   border-radius: 24px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 .content-section h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   color: #e58ca0;
 }
@@ -182,7 +194,7 @@ img {
 }
 
 .content-section p {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .content-section ul {
@@ -190,7 +202,7 @@ img {
 }
 
 .content-section li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* =========================
@@ -199,14 +211,14 @@ img {
 
 .staff-card {
   display: flex;
-  gap: 40px;
   flex-wrap: wrap;
-  margin-top: 40px;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .staff-image {
   width: 260px;
-  border-radius: 24px;
+  border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -215,31 +227,15 @@ img {
   min-width: 280px;
 }
 
-.staff-text h3 {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-  color: #d97b92;
-}
-
-.staff-role {
-  display: inline-block;
-  background: #f7dbe2;
-  color: #c96d84;
-  padding: 6px 14px;
-  border-radius: 999px;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
 /* =========================
-   CARD
+   ACHIEVEMENT
 ========================= */
 
 .achievement-box {
   background: #fff7f8;
+  padding: 20px;
   border-radius: 20px;
-  padding: 24px;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 /* =========================
@@ -248,8 +244,8 @@ img {
 
 .contact-section {
   max-width: 800px;
-  margin: 80px auto;
-  padding: 50px 30px;
+  margin: 60px auto;
+  padding: 40px 25px;
   background: #fff;
   border-radius: 24px;
   text-align: center;
@@ -260,9 +256,20 @@ img {
   display: inline-block;
   background: #7bc89c;
   color: #fff;
-  padding: 16px 36px;
+  padding: 14px 32px;
   border-radius: 999px;
   font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #777;
+  font-size: 0.9rem;
 }
 
 /* =========================
@@ -273,7 +280,7 @@ img {
 
   .header-inner {
     flex-direction: column;
-    gap: 12px;
+    text-align: center;
   }
 
   .hero {
@@ -288,232 +295,7 @@ img {
     font-size: 1rem;
   }
 
-  .staff-card {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .staff-image {
-    margin: auto;
-  }
-}
-/* =========================
-   月額会員メニュー強調
-========================= */
-
-.nav a {
-  position: relative;
-}
-
-/* 月額会員ボタン（強調） */
-.member-btn {
-  background: #f2b6c6;
-  color: #fff !important;
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-weight: 600;
-  transition: 0.3s;
-  display: inline-block;
-}
-
-/* ホバー */
-.member-btn:hover {
-  opacity: 0.85;
-  transform: translateY(-2px);
-}
-
-/* スマホでも押しやすく */
-@media (max-width: 768px) {
-  .member-btn {
-    padding: 10px 18px;
-    font-size: 0.9rem;
-  }
-}
-/* =========================
-   プロ仕様ナビデザイン
-========================= */
-
-.nav {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-/* 通常メニュー */
-.nav a {
-  padding: 8px 12px;
-  border-radius: 10px;
-  transition: 0.25s;
-  color: #555;
-}
-
-/* ホバー */
-.nav a:hover {
-  background: rgba(242, 182, 198, 0.15);
-  color: #d97b92;
-  transform: translateY(-1px);
-}
-
-/* アクティブ感（今いるページ用） */
-.nav a.active {
-  background: rgba(242, 182, 198, 0.25);
-  color: #d97b92;
-  font-weight: 600;
-}
-
-/* =========================
-   月額会員（強調ボタン）
-========================= */
-
-.member-btn {
-  background: linear-gradient(135deg, #f2b6c6, #e58ca0);
-  color: #fff !important;
-  padding: 10px 18px;
-  border-radius: 999px;
-  font-weight: 700;
-  box-shadow: 0 6px 15px rgba(229, 140, 160, 0.25);
-  transition: 0.25s;
-  position: relative;
-  overflow: hidden;
-}
-
-/* ホバーで浮く */
-.member-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(229, 140, 160, 0.35);
-}
-
-/* キラッとした光エフェクト */
-.member-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 60%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-  transform: skewX(-20deg);
-  transition: 0.4s;
-}
-
-.member-btn:hover::before {
-  left: 120%;
-}
-
-/* スマホ */
-@media (max-width: 768px) {
   .nav {
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
   }
-
-  .nav a {
-    font-size: 0.85rem;
-  }
-
-  .member-btn {
-    padding: 10px 16px;
-    font-size: 0.9rem;
-  }
-}
-/* =========================
-   ナビプロ化（最終形）
-========================= */
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-}
-
-/* 通常リンク */
-.nav a {
-  padding: 8px 12px;
-  border-radius: 10px;
-  font-size: 0.95rem;
-  color: #555;
-  transition: 0.25s;
-}
-
-/* ホバー */
-.nav a:hover {
-  background: rgba(242, 182, 198, 0.15);
-  color: #d97b92;
-  transform: translateY(-1px);
-}
-
-/* 現在ページ用 */
-.nav a.active {
-  background: rgba(242, 182, 198, 0.25);
-  color: #d97b92;
-  font-weight: 600;
-}
-
-/* =========================
-   月額サポート（自然強調版）
-========================= */
-
-.nav-highlight {
-  color: #d97b92 !important;
-  font-weight: 600;
-  position: relative;
-  padding: 8px 12px;
-  border-radius: 10px;
-  transition: 0.25s;
-}
-
-/* 下線アクセント */
-.nav-highlight::after {
-  content: "";
-  position: absolute;
-  left: 12px;
-  bottom: 4px;
-  width: calc(100% - 24px);
-  height: 2px;
-  background: #f2b6c6;
-  opacity: 0.7;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: 0.3s;
-}
-
-/* ホバー */
-.nav-highlight:hover {
-  background: rgba(242, 182, 198, 0.12);
-}
-
-.nav-highlight:hover::after {
-  transform: scaleX(1);
-}
-.page-hero {
-  background: #fff;
-  padding: 80px 20px;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-}
-
-.page-hero h2 {
-  font-size: 2rem;
-  color: #d97b92;
-  margin-bottom: 10px;
-}
-
-.page-hero p {
-  color: #666;
-}
-
-.content-section h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.content-section h3 a {
-  color: #333;
-  transition: 0.3s;
-}
-
-.content-section h3 a:hover {
-  color: #d97b92;
 }
