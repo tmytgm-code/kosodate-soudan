@@ -607,3 +607,19 @@ box-shadow: 0 6px 15px rgba(123,200,156,0.3);
 transform: translateY(-3px);
 opacity: 0.9;
 }
+/* TOPメイン文字サイズ修正 */
+
+.hero-title{
+font-size: 3.2rem !important;
+line-height: 1.4 !important;
+font-weight: 700;
+}
+
+@media(max-width:768px){
+
+.hero-title{
+font-size: 2rem !important;
+line-height: 1.5 !important;
+}
+
+}
