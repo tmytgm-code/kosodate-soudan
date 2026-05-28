@@ -1,0 +1,94 @@
+body{
+margin:0;
+font-family:"Noto Sans JP",sans-serif;
+line-height:1.8;
+background:#f7f5f2;
+color:#333;
+}
+
+a{
+text-decoration:none;
+color:#333;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+.site-header{
+background:#fff;
+padding:20px 0;
+position:sticky;
+top:0;
+z-index:100;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+font-size:1.2rem;
+margin:0;
+}
+
+.nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:15px;
+}
+
+.nav a{
+font-size:0.95rem;
+}
+
+.page-hero{
+padding:80px 0;
+background:#f2dede;
+text-align:center;
+}
+
+.page-hero h2{
+font-size:2rem;
+margin-bottom:20px;
+}
+
+.content-section{
+padding:80px 0;
+background:#fff;
+}
+
+.content-section h3{
+font-size:1.5rem;
+margin-bottom:20px;
+color:#d16b86;
+}
+
+.footer{
+padding:40px 0;
+text-align:center;
+background:#fff;
+margin-top:50px;
+font-size:0.9rem;
+}
+
+@media(max-width:768px){
+
+.nav{
+flex-direction:column;
+gap:10px;
+}
+
+.page-hero{
+padding:60px 20px;
+}
+
+.page-hero h2{
+font-size:1.6rem;
+}
+
+.content-section{
+padding:50px 20px;
+}
+
+}
