@@ -452,56 +452,38 @@ img {
 }
 
 /* =========================
-   月額サポート（主役ボタン）
+   月額サポート（自然強調版）
 ========================= */
 
-.member-btn {
-  background: linear-gradient(135deg, #f2b6c6, #e58ca0);
-  color: #fff !important;
-  padding: 10px 18px;
-  border-radius: 999px;
-  font-weight: 700;
-  box-shadow: 0 6px 15px rgba(229, 140, 160, 0.25);
-  transition: 0.25s;
+.nav-highlight {
+  color: #d97b92 !important;
+  font-weight: 600;
   position: relative;
-  overflow: hidden;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: 0.25s;
 }
 
-/* ホバーで浮く */
-.member-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(229, 140, 160, 0.35);
-}
-
-/* 光が流れるエフェクト */
-.member-btn::before {
+/* 下線アクセント */
+.nav-highlight::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 60%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.35);
-  transform: skewX(-20deg);
-  transition: 0.4s;
+  left: 12px;
+  bottom: 4px;
+  width: calc(100% - 24px);
+  height: 2px;
+  background: #f2b6c6;
+  opacity: 0.7;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
 }
 
-.member-btn:hover::before {
-  left: 120%;
+/* ホバー */
+.nav-highlight:hover {
+  background: rgba(242, 182, 198, 0.12);
 }
 
-/* スマホ */
-@media (max-width: 768px) {
-  .nav {
-    justify-content: center;
-    gap: 8px;
-  }
-
-  .nav a {
-    font-size: 0.85rem;
-  }
-
-  .member-btn {
-    padding: 10px 16px;
-  }
+.nav-highlight:hover::after {
+  transform: scaleX(1);
 }
