@@ -59,10 +59,15 @@ img{
   padding:18px 0;
 }
 
+```css id="j9m2ax"
 .logo a{
-  font-size:1.1rem;
-  font-weight:700;
-  color:#e58ca0;
+  font-size:1.8rem;
+  font-weight:800;
+  color:#d97b92;
+  letter-spacing:0.05em;
+}
+```
+
 }
 
 /* =========================
