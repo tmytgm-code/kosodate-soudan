@@ -253,23 +253,21 @@ img{
 
 }
 
-/* =========================
-   staffページ
-========================= */
+/* staffページ */
 
 .staff-card{
   display:flex;
-  gap:40px;
+  gap:50px;
   align-items:flex-start;
-  margin-top:40px;
   flex-wrap:wrap;
+  margin-top:40px;
 }
 
 .staff-image{
   width:260px;
   max-width:100%;
   border-radius:24px;
-  object-fit:cover;
+  display:block;
   box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
@@ -278,15 +276,28 @@ img{
   min-width:280px;
 }
 
+.staff-text h3{
+  font-size:1.8rem;
+  line-height:1.7;
+  margin-bottom:20px;
+  color:#d97b92;
+}
+
 .staff-role{
   display:inline-block;
-  margin:10px 0 20px;
-  padding:6px 14px;
-  border-radius:999px;
-  background:#f6d9df;
+  background:#f7dbe2;
   color:#c96d84;
-  font-size:0.9rem;
+  padding:8px 16px;
+  border-radius:999px;
+  margin-bottom:24px;
   font-weight:600;
+}
+
+.staff-text p{
+  line-height:2.2;
+  margin-bottom:24px;
+  color:#555;
+  font-size:1.05rem;
 }
 
 @media(max-width:768px){
@@ -296,8 +307,6 @@ img{
   }
 
   .staff-image{
-    width:100%;
-    max-width:320px;
     margin:auto;
   }
 
