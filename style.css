@@ -623,3 +623,42 @@ line-height: 1.5 !important;
 }
 
 }
+/* =========================
+スマホヘッダー修正
+========================= */
+
+@media(max-width:768px){
+
+.site-header{
+padding:12px 0;
+}
+
+.header-inner{
+flex-direction:column;
+gap:14px;
+}
+
+.logo{
+text-align:center;
+}
+
+.logo a{
+font-size:1.3rem !important;
+line-height:1.5;
+display:block;
+}
+
+.nav{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px 14px;
+padding:0 10px;
+}
+
+.nav a{
+font-size:0.9rem;
+padding:6px 0;
+}
+
+}
