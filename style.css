@@ -454,36 +454,65 @@ font-weight: bold;
 
 @media(max-width:768px){
 
-.header-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:18px 0;
-  gap:20px;
+/* ヘッダー */
+
+.site-header{
+padding:12px 0;
 }
 
-  .logo a{
-    font-size:1.8rem;
-  }
+.header-inner{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:12px;
+}
+
+/* ロゴ */
+
+.logo{
+text-align:center;
+width:100%;
+}
+
+.logo a{
+font-size:1.2rem !important;
+line-height:1.6;
+display:block;
+white-space:normal !important;
+}
+
+/* ナビ */
 
 .nav{
-  display:flex;
-  gap:18px;
-  flex-wrap:wrap;
-  justify-content:flex-end;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px 12px;
+width:100%;
+padding:0 10px;
 }
 
-  .hero{
-    padding:100px 20px;
-  }
+.nav a{
+font-size:0.85rem !important;
+white-space:nowrap;
+}
 
-  .hero h2{
-    font-size:2.4rem;
-  }
+/* TOP */
 
-  .hero-text{
-    font-size:1rem;
-  }
+.hero{
+padding:80px 20px;
+}
+
+.hero h2,
+.hero-title{
+font-size:2rem !important;
+line-height:1.5 !important;
+}
+
+.hero-text{
+font-size:1rem;
+line-height:1.8;
+}
 
 }
 
@@ -620,45 +649,6 @@ font-weight: 700;
 .hero-title{
 font-size: 2rem !important;
 line-height: 1.5 !important;
-}
-
-}
-/* =========================
-スマホヘッダー修正
-========================= */
-
-@media(max-width:768px){
-
-.site-header{
-padding:12px 0;
-}
-
-.header-inner{
-flex-direction:column;
-gap:14px;
-}
-
-.logo{
-text-align:center;
-}
-
-.logo a{
-font-size:1.3rem !important;
-line-height:1.5;
-display:block;
-}
-
-.nav{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:10px 14px;
-padding:0 10px;
-}
-
-.nav a{
-font-size:0.9rem;
-padding:6px 0;
 }
 
 }
