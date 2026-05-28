@@ -2,653 +2,425 @@
    基本設定
 ========================= */
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-  font-family:
-  "Noto Sans JP",
-  "Hiragino Kaku Gothic ProN",
-  sans-serif;
-
-  line-height:1.8;
-  color:#444;
-  background:#f8f7f4;
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 1.8;
+  color: #444;
+  background: #f8f7f4;
 }
 
 /* =========================
    共通
 ========================= */
 
-.container{
-  width:90%;
-  max-width:1100px;
-  margin:auto;
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-img{
-  width:100%;
-  display:block;
+img {
+  width: 100%;
+  display: block;
 }
 
 /* =========================
    ヘッダー
 ========================= */
 
-.site-header{
-  background:#ffffff;
-  border-bottom:1px solid #eee;
-  position:sticky;
-  top:0;
-  z-index:1000;
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #f1e4e7;
 }
 
-.site-header .container{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:18px 0;
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  gap: 30px;
 }
 
-```css id="j9m2ax"
-.logo a{
-  font-size:1.8rem;
-  font-weight:800;
-  color:#d97b92;
-  letter-spacing:0.05em;
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
 }
 
 /* =========================
    ナビ
 ========================= */
 
-.nav{
-  display:flex;
-  gap:18px;
-  flex-wrap:wrap;
+.nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
-.nav a{
-  text-decoration:none;
-  color:#555;
-  font-size:0.95rem;
-  transition:0.3s;
-  white-space:nowrap;
+.nav a {
+  color: #555;
+  font-size: 0.95rem;
+  transition: 0.3s;
+  white-space: nowrap;
 }
 
-/* =========================
-   ファーストビュー
-========================= */
-
-.hero{
-  background:
-  linear-gradient(
-    rgba(255,255,255,0.7),
-    rgba(255,255,255,0.7)
-  ),
-  #f6d9df;
-
-  padding:110px 20px;
-  text-align:center;
+/* 会員ボタン */
+.member-btn {
+  background: #f2b6c6;
+  color: #fff !important;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
 }
 
-.hero h2{
-font-size: 3.2rem;
-line-height: 1.4;
-margin-bottom: 25px;
-font-weight: bold;
-}
-
-.hero p{
-  font-size:1.1rem;
-  margin-bottom:35px;
-  color:#666;
-}
-
-/* =========================
-   セクション
-========================= */
-
-.content-section{
-  background:#fff;
-  margin:40px auto;
-  padding:60px 30px;
-  border-radius:24px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.04);
-}
-
-.content-section h2{
-  font-size:2rem;
-  margin-bottom:25px;
-  color:#e58ca0;
-}
-
-.content-section h3{
-  margin-top:20px;
-  margin-bottom:10px;
-  color:#666;
-}
-
-.content-section p{
-  margin-bottom:20px;
-}
-
-.content-section ul{
-  padding-left:20px;
-}
-
-.content-section li{
-  margin-bottom:12px;
-}
-
-/* =========================
-   画像
-========================= */
-
-.event-img{
-  max-width:700px;
-  margin:30px auto;
-  border-radius:20px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
-/* =========================
-   ボタン
-========================= */
-
-.btn{
-  display:inline-block;
-  background:#7dbb9b;
-  color:#fff;
-  padding:15px 32px;
-  border-radius:999px;
-  transition:0.3s;
-  font-weight:600;
-}
-
-.btn:hover{
-  opacity:0.85;
-  transform:translateY(-2px);
-}
-
-/* =========================
-   CTA
-========================= */
-
-.cta-section{
-  text-align:center;
-  padding:90px 20px;
-}
-
-.cta-section h2{
-  font-size:2rem;
-  margin-bottom:20px;
-  color:#e58ca0;
-}
-
-.cta-section p{
-  margin-bottom:30px;
-}
-
-/* =========================
-   フッター
-========================= */
-
-.footer{
-  text-align:center;
-  padding:40px 20px;
-  color:#777;
-  font-size:0.9rem;
-}
-
-/* =========================
-   スタッフページ文字調整
-========================= */
-
-.staff-text{
-  flex:1;
-  min-width:280px;
-  line-height:2.1;
-}
-
-.staff-text h3{
-  font-size:1.7rem;
-  margin-bottom:18px;
-  color:#d97b92;
-  line-height:1.6;
-}
-
-.staff-text p{
-  margin-bottom:24px;
-  font-size:1.05rem;
-  color:#555;
-  letter-spacing:0.03em;
-}
-
-/* スマホ調整 */
-
-@media(max-width:768px){
-
-  .staff-text{
-    line-height:1.95;
-  }
-
-  .staff-text h3{
-    font-size:1.4rem;
-  }
-
-  .staff-text p{
-    font-size:1rem;
-  }
-
-}
-
-/* staffページ */
-
-.staff-card{
-  display:flex;
-  gap:50px;
-  align-items:flex-start;
-  flex-wrap:wrap;
-  margin-top:40px;
-}
-
-.staff-image{
-  width:260px;
-  max-width:100%;
-  border-radius:24px;
-  display:block;
-  box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
-.staff-text{
-  flex:1;
-  min-width:280px;
-}
-
-.staff-text h3{
-  font-size:1.8rem;
-  line-height:1.7;
-  margin-bottom:20px;
-  color:#d97b92;
-}
-
-.staff-role{
-  display:inline-block;
-  background:#f7dbe2;
-  color:#c96d84;
-  padding:8px 16px;
-  border-radius:999px;
-  margin-bottom:24px;
-  font-weight:600;
-}
-
-.staff-text p{
-  line-height:2.2;
-  margin-bottom:24px;
-  color:#555;
-  font-size:1.05rem;
-}
-
-@media(max-width:768px){
-
-  .staff-card{
-    flex-direction:column;
-  }
-
-  .staff-image{
-    margin:auto;
-  }
-
-}
-
-/* スタッフ画像 */
-
-.staff-image{
-  width:260px;
-  max-width:100%;
-  border-radius:24px;
-  display:block;
-  margin:30px auto;
-  box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
-/* 開催実績 */
-
-.achievement-box{
-  background:#fff7f8;
-  border-radius:20px;
-  padding:28px;
-  margin-top:28px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.04);
-}
-
-.achievement-box h3{
-  color:#d97b92;
-  margin-bottom:18px;
-  font-size:1.3rem;
-}
-
-.achievement-box ul{
-  padding-left:20px;
-}
-
-.achievement-box li{
-  margin-bottom:10px;
-  line-height:1.9;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-.site-header{
-  position:sticky;
-  top:0;
-  z-index:999;
-  background:rgba(255,255,255,0.92);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid #f1e4e7;
-}
-
-.header-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:22px 0;
-  gap:30px;
-}
-
-.logo a{
-  text-decoration:none;
-  color:#333;
-  font-size:1.8rem;
-  font-weight:700;
-  letter-spacing:0.03em;
-  white-space:nowrap;
+.member-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
 }
 
 /* =========================
    HERO
 ========================= */
 
-.hero{
+.hero {
   background:
-  linear-gradient(
-    rgba(255,248,250,0.92),
-    rgba(255,248,250,0.92)
-  ),
-  url("image4.jpeg");
+    linear-gradient(
+      rgba(255, 248, 250, 0.92),
+      rgba(255, 248, 250, 0.92)
+    ),
+    url("image4.jpeg");
 
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
 
-  padding:140px 20px;
-  text-align:center;
+  padding: 140px 20px;
+  text-align: center;
 }
 
-.hero-inner{
-  max-width:900px;
-  margin:auto;
+.hero-inner {
+  max-width: 900px;
+  margin: auto;
 }
 
-.hero-sub{
-  color:#d97b92;
-  font-size:1rem;
-  margin-bottom:24px;
-  letter-spacing:0.08em;
+.hero-sub {
+  color: #d97b92;
+  font-size: 1rem;
+  margin-bottom: 24px;
+  letter-spacing: 0.08em;
 }
 
-.hero h2{
-  font-size:4rem;
-  line-height:1.5;
-  margin-bottom:32px;
-  color:#333;
+.hero-title {
+  font-size: 3.2rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #333;
 }
 
-.hero-text{
-  font-size:1.2rem;
-  color:#666;
-  margin-bottom:50px;
-  line-height:2;
+.hero-text {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+  line-height: 2;
 }
 
-.hero-buttons{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  flex-wrap:wrap;
-}
-
-.btn{
-  display:inline-block;
-  padding:18px 38px;
-  border-radius:999px;
-  background:#8bc5a3;
-  color:#fff;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
-}
-
-.btn:hover{
-  transform:translateY(-3px);
-  opacity:0.9;
-}
-
-.btn-secondary{
-  background:#f2b6c6;
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* =========================
-   SP
+   ボタン
 ========================= */
 
-@media(max-width:768px){
-
-/* ヘッダー */
-
-.site-header{
-padding:12px 0;
+.btn {
+  display: inline-block;
+  padding: 18px 38px;
+  border-radius: 999px;
+  background: #8bc5a3;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.header-inner{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:12px;
+.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
 }
 
-/* ロゴ */
-
-.logo{
-text-align:center;
-width:100%;
+.btn-secondary {
+  background: #f2b6c6;
 }
 
-.logo a{
-font-size:1.2rem !important;
-line-height:1.6;
-display:block;
-white-space:normal !important;
+/* =========================
+   セクション
+========================= */
+
+.content-section {
+  background: #fff;
+  margin: 40px auto;
+  padding: 60px 30px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
-/* ナビ */
-
-.nav{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:10px 12px;
-width:100%;
-padding:0 10px;
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #e58ca0;
 }
 
-.nav a{
-font-size:0.85rem !important;
-white-space:nowrap;
+.content-section h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #666;
 }
 
-/* TOP */
-
-.hero{
-padding:80px 20px;
+.content-section p {
+  margin-bottom: 20px;
 }
 
-.hero h2,
-.hero-title{
-font-size:2rem !important;
-line-height:1.5 !important;
+.content-section ul {
+  padding-left: 20px;
 }
 
-.hero-text{
-font-size:1rem;
-line-height:1.8;
+.content-section li {
+  margin-bottom: 12px;
 }
 
+/* =========================
+   画像
+========================= */
+
+.event-img {
+  max-width: 700px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* 開催情報カード */
+/* =========================
+   CTA
+========================= */
 
-.schedule-card{
-  background:#fff;
-  border-radius:24px;
-  padding:32px;
-  margin-top:32px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+.cta-section {
+  text-align: center;
+  padding: 90px 20px;
 }
 
-.schedule-card h3{
-  color:#d97b92;
-  font-size:1.5rem;
-  margin-bottom:24px;
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e58ca0;
 }
 
-.schedule-card ul{
-  padding-left:20px;
+.cta-section p {
+  margin-bottom: 30px;
 }
 
-.schedule-card li{
-  margin-bottom:14px;
-  line-height:1.9;
-  color:#555;
+/* =========================
+   フッター
+========================= */
+
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #777;
+  font-size: 0.9rem;
 }
 
-.schedule-note{
-  margin-top:24px;
-  color:#777;
-  font-size:0.95rem;
-}
-@media(max-width:768px){
+/* =========================
+   スタッフ
+========================= */
 
-.hero h2{
-font-size: 2.2rem;
-line-height: 1.5;
-}
-
+.staff-card {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.hero p {
-font-size: 1rem;
-line-height: 1.8;
+.staff-image {
+  width: 260px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-}
-.schedule-section{
-max-width: 900px;
-margin: 60px auto;
-padding: 0 20px;
+.staff-text {
+  flex: 1;
+  min-width: 280px;
 }
 
-.schedule-card{
-background: #fff;
-padding: 30px;
-margin-bottom: 30px;
-border-radius: 20px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+.staff-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #d97b92;
 }
 
-.schedule-card h3{
-font-size: 1.5rem;
-margin-bottom: 20px;
-color: #5c4b51;
+.staff-role {
+  display: inline-block;
+  background: #f7dbe2;
+  color: #c96d84;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+  font-weight: 600;
 }
 
-.schedule-list{
-list-style: none;
-padding: 0;
-margin: 0;
+.staff-text p {
+  line-height: 2.2;
+  margin-bottom: 24px;
+  color: #555;
 }
 
-.schedule-list li{
-padding: 12px 0;
-border-bottom: 1px solid #eee;
-font-size: 1.05rem;
-}
-.contact-section{
-max-width: 800px;
-margin: 80px auto;
-padding: 50px 30px;
-background: #fff;
-border-radius: 24px;
-text-align: center;
-box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+/* =========================
+   実績・カード
+========================= */
+
+.achievement-box {
+  background: #fff7f8;
+  border-radius: 20px;
+  padding: 28px;
+  margin-top: 28px;
 }
 
-.contact-section h2{
-font-size: 2rem;
-margin-bottom: 20px;
-color: #444;
+.achievement-box h3 {
+  color: #d97b92;
+  margin-bottom: 18px;
+  font-size: 1.3rem;
 }
 
-.contact-section p{
-font-size: 1.1rem;
-line-height: 2;
-margin-bottom: 35px;
+.achievement-box ul {
+  padding-left: 20px;
 }
 
-.line-btn-area{
-margin-top: 20px;
+.achievement-box li {
+  margin-bottom: 10px;
 }
 
-.line-btn{
-display: inline-block;
-background: #7bc89c;
-color: #fff;
-padding: 18px 40px;
-border-radius: 999px;
-text-decoration: none;
-font-size: 1.1rem;
-font-weight: bold;
-transition: 0.3s;
-box-shadow: 0 6px 15px rgba(123,200,156,0.3);
+/* =========================
+   スケジュール
+========================= */
+
+.schedule-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
-.line-btn:hover{
-transform: translateY(-3px);
-opacity: 0.9;
-}
-/* TOPメイン文字サイズ修正 */
-
-.hero-title{
-font-size: 3.2rem !important;
-line-height: 1.4 !important;
-font-weight: 700;
+.schedule-card {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-@media(max-width:768px){
-
-.hero-title{
-font-size: 2rem !important;
-line-height: 1.5 !important;
+.schedule-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #5c4b51;
 }
 
+.schedule-list {
+  list-style: none;
+  padding: 0;
+}
+
+.schedule-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* =========================
+   お問い合わせ
+========================= */
+
+.contact-section {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 50px 30px;
+  background: #fff;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  line-height: 2;
+  margin-bottom: 35px;
+}
+
+.line-btn {
+  display: inline-block;
+  background: #7bc89c;
+  color: #fff;
+  padding: 18px 40px;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.line-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* =========================
+   スマホ対応
+========================= */
+
+@media (max-width: 768px) {
+
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .staff-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .staff-image {
+    margin: auto;
+  }
 }
