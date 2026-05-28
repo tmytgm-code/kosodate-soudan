@@ -248,3 +248,54 @@ img{
 
 }
 ```
+```css
+/* =========================
+   staffページ
+========================= */
+
+.staff-card{
+  display:flex;
+  gap:40px;
+  align-items:flex-start;
+  margin-top:40px;
+  flex-wrap:wrap;
+}
+
+.staff-image{
+  width:260px;
+  max-width:100%;
+  border-radius:24px;
+  object-fit:cover;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.staff-text{
+  flex:1;
+  min-width:280px;
+}
+
+.staff-role{
+  display:inline-block;
+  margin:10px 0 20px;
+  padding:6px 14px;
+  border-radius:999px;
+  background:#f6d9df;
+  color:#c96d84;
+  font-size:0.9rem;
+  font-weight:600;
+}
+
+@media(max-width:768px){
+
+  .staff-card{
+    flex-direction:column;
+  }
+
+  .staff-image{
+    width:100%;
+    max-width:320px;
+    margin:auto;
+  }
+
+}
+```
