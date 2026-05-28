@@ -518,11 +518,13 @@ font-weight: bold;
   color:#777;
   font-size:0.95rem;
 }
-@media (max-width: 768px) {
+@media(max-width:768px){
 
-.hero h2 {
+.hero h2{
 font-size: 2.2rem;
 line-height: 1.5;
+}
+
 }
 
 .hero p {
