@@ -77,13 +77,11 @@ img{
 }
 
 .nav a{
-  font-size:0.95rem;
+  text-decoration:none;
   color:#555;
+  font-size:0.95rem;
   transition:0.3s;
-}
-
-.nav a:hover{
-  color:#e58ca0;
+  white-space:nowrap;
 }
 
 /* =========================
@@ -372,26 +370,10 @@ img{
 .logo a{
   text-decoration:none;
   color:#333;
-  font-size:2.2rem;
+  font-size:1.8rem;
   font-weight:700;
-  letter-spacing:0.04em;
-}
-
-.nav{
-  display:flex;
-  gap:28px;
-  flex-wrap:wrap;
-}
-
-.nav a{
-  text-decoration:none;
-  color:#555;
-  font-size:1rem;
-  transition:0.3s;
-}
-
-.nav a:hover{
-  color:#d97b92;
+  letter-spacing:0.03em;
+  white-space:nowrap;
 }
 
 /* =========================
@@ -472,19 +454,24 @@ img{
 
 @media(max-width:768px){
 
-  .header-inner{
-    flex-direction:column;
-    padding:18px 0;
-  }
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 0;
+  gap:20px;
+}
 
   .logo a{
     font-size:1.8rem;
   }
 
-  .nav{
-    justify-content:center;
-    gap:18px;
-  }
+.nav{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
 
   .hero{
     padding:100px 20px;
