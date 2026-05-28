@@ -322,3 +322,28 @@ img{
   margin:30px auto;
   box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
+
+/* 開催実績 */
+
+.achievement-box{
+  background:#fff7f8;
+  border-radius:20px;
+  padding:28px;
+  margin-top:28px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.04);
+}
+
+.achievement-box h3{
+  color:#d97b92;
+  margin-bottom:18px;
+  font-size:1.3rem;
+}
+
+.achievement-box ul{
+  padding-left:20px;
+}
+
+.achievement-box li{
+  margin-bottom:10px;
+  line-height:1.9;
+}
