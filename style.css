@@ -486,3 +486,35 @@ img{
   }
 
 }
+
+/* 開催情報カード */
+
+.schedule-card{
+  background:#fff;
+  border-radius:24px;
+  padding:32px;
+  margin-top:32px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+}
+
+.schedule-card h3{
+  color:#d97b92;
+  font-size:1.5rem;
+  margin-bottom:24px;
+}
+
+.schedule-card ul{
+  padding-left:20px;
+}
+
+.schedule-card li{
+  margin-bottom:14px;
+  line-height:1.9;
+  color:#555;
+}
+
+.schedule-note{
+  margin-top:24px;
+  color:#777;
+  font-size:0.95rem;
+}
