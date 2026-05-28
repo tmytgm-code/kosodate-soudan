@@ -212,39 +212,43 @@ img{
 }
 
 /* =========================
-   スマホ対応
+   スタッフページ文字調整
 ========================= */
+
+.staff-text{
+  flex:1;
+  min-width:280px;
+  line-height:2.1;
+}
+
+.staff-text h3{
+  font-size:1.7rem;
+  margin-bottom:18px;
+  color:#d97b92;
+  line-height:1.6;
+}
+
+.staff-text p{
+  margin-bottom:24px;
+  font-size:1.05rem;
+  color:#555;
+  letter-spacing:0.03em;
+}
+
+/* スマホ調整 */
 
 @media(max-width:768px){
 
-  .site-header .container{
-    flex-direction:column;
-    gap:15px;
+  .staff-text{
+    line-height:1.95;
   }
 
-  .nav{
-    justify-content:center;
+  .staff-text h3{
+    font-size:1.4rem;
   }
 
-  .hero{
-    padding:80px 20px;
-  }
-
-  .hero h2{
-    font-size:1.8rem;
-  }
-
-  .content-section{
-    padding:40px 20px;
-  }
-
-  .content-section h2{
-    font-size:1.6rem;
-  }
-
-  .btn{
-    width:100%;
-    text-align:center;
+  .staff-text p{
+    font-size:1rem;
   }
 
 }
