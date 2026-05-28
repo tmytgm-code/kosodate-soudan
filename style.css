@@ -297,3 +297,35 @@ img {
     margin: auto;
   }
 }
+/* =========================
+   月額会員メニュー強調
+========================= */
+
+.nav a {
+  position: relative;
+}
+
+/* 月額会員ボタン（強調） */
+.member-btn {
+  background: #f2b6c6;
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+/* ホバー */
+.member-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* スマホでも押しやすく */
+@media (max-width: 768px) {
+  .member-btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}
