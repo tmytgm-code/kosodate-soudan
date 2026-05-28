@@ -417,3 +417,91 @@ img {
     font-size: 0.9rem;
   }
 }
+/* =========================
+   ナビプロ化（最終形）
+========================= */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+/* 通常リンク */
+.nav a {
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #555;
+  transition: 0.25s;
+}
+
+/* ホバー */
+.nav a:hover {
+  background: rgba(242, 182, 198, 0.15);
+  color: #d97b92;
+  transform: translateY(-1px);
+}
+
+/* 現在ページ用 */
+.nav a.active {
+  background: rgba(242, 182, 198, 0.25);
+  color: #d97b92;
+  font-weight: 600;
+}
+
+/* =========================
+   月額サポート（主役ボタン）
+========================= */
+
+.member-btn {
+  background: linear-gradient(135deg, #f2b6c6, #e58ca0);
+  color: #fff !important;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(229, 140, 160, 0.25);
+  transition: 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ホバーで浮く */
+.member-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(229, 140, 160, 0.35);
+}
+
+/* 光が流れるエフェクト */
+.member-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: skewX(-20deg);
+  transition: 0.4s;
+}
+
+.member-btn:hover::before {
+  left: 120%;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .nav {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav a {
+    font-size: 0.85rem;
+  }
+
+  .member-btn {
+    padding: 10px 16px;
+  }
+}
