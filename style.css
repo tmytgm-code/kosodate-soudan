@@ -532,3 +532,34 @@ line-height: 1.8;
 }
 
 }
+.schedule-section{
+max-width: 900px;
+margin: 60px auto;
+padding: 0 20px;
+}
+
+.schedule-card{
+background: #fff;
+padding: 30px;
+margin-bottom: 30px;
+border-radius: 20px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.schedule-card h3{
+font-size: 1.5rem;
+margin-bottom: 20px;
+color: #5c4b51;
+}
+
+.schedule-list{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.schedule-list li{
+padding: 12px 0;
+border-bottom: 1px solid #eee;
+font-size: 1.05rem;
+}
