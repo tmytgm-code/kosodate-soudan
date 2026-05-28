@@ -1,5 +1,5 @@
 /* =========================
-   基本設定
+   RESET
 ========================= */
 
 * {
@@ -16,7 +16,7 @@ body {
 }
 
 /* =========================
-   共通
+   BASE
 ========================= */
 
 .container {
@@ -31,12 +31,12 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
 /* =========================
-   ヘッダー
+   HEADER
 ========================= */
 
 .site-header {
@@ -60,12 +60,11 @@ img {
   font-size: 1.8rem;
   font-weight: 700;
   color: #333;
-  letter-spacing: 0.03em;
   white-space: nowrap;
 }
 
 /* =========================
-   ナビ
+   NAV
 ========================= */
 
 .nav {
@@ -81,7 +80,6 @@ img {
   white-space: nowrap;
 }
 
-/* 会員ボタン */
 .member-btn {
   background: #f2b6c6;
   color: #fff !important;
@@ -101,10 +99,7 @@ img {
 
 .hero {
   background:
-    linear-gradient(
-      rgba(255, 248, 250, 0.92),
-      rgba(255, 248, 250, 0.92)
-    ),
+    linear-gradient(rgba(255, 248, 250, 0.92), rgba(255, 248, 250, 0.92)),
     url("image4.jpeg");
 
   background-size: cover;
@@ -123,38 +118,29 @@ img {
   color: #d97b92;
   font-size: 1rem;
   margin-bottom: 24px;
-  letter-spacing: 0.08em;
 }
 
 .hero-title {
   font-size: 2.4rem;
-  line-height: 1.4;
   font-weight: 700;
-  margin-bottom: 32px;
+  line-height: 1.4;
+  margin-bottom: 30px;
   color: #333;
 }
 
 .hero-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #666;
-  margin-bottom: 50px;
-  line-height: 2;
-}
-
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 /* =========================
-   ボタン
+   BUTTON
 ========================= */
 
 .btn {
   display: inline-block;
-  padding: 18px 38px;
+  padding: 16px 36px;
   border-radius: 999px;
   background: #8bc5a3;
   color: #fff;
@@ -172,7 +158,7 @@ img {
 }
 
 /* =========================
-   セクション
+   SECTION
 ========================= */
 
 .content-section {
@@ -185,7 +171,7 @@ img {
 
 .content-section h2 {
   font-size: 2rem;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #e58ca0;
 }
 
@@ -204,57 +190,16 @@ img {
 }
 
 .content-section li {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 /* =========================
-   画像
-========================= */
-
-.event-img {
-  max-width: 700px;
-  margin: 30px auto;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-/* =========================
-   CTA
-========================= */
-
-.cta-section {
-  text-align: center;
-  padding: 90px 20px;
-}
-
-.cta-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #e58ca0;
-}
-
-.cta-section p {
-  margin-bottom: 30px;
-}
-
-/* =========================
-   フッター
-========================= */
-
-.footer {
-  text-align: center;
-  padding: 40px 20px;
-  color: #777;
-  font-size: 0.9rem;
-}
-
-/* =========================
-   スタッフ
+   STAFF
 ========================= */
 
 .staff-card {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   flex-wrap: wrap;
   margin-top: 40px;
 }
@@ -271,8 +216,8 @@ img {
 }
 
 .staff-text h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
   color: #d97b92;
 }
 
@@ -280,79 +225,25 @@ img {
   display: inline-block;
   background: #f7dbe2;
   color: #c96d84;
-  padding: 8px 16px;
+  padding: 6px 14px;
   border-radius: 999px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 
-.staff-text p {
-  line-height: 2.2;
-  margin-bottom: 24px;
-  color: #555;
-}
-
 /* =========================
-   実績・カード
+   CARD
 ========================= */
 
 .achievement-box {
   background: #fff7f8;
   border-radius: 20px;
-  padding: 28px;
-  margin-top: 28px;
-}
-
-.achievement-box h3 {
-  color: #d97b92;
-  margin-bottom: 18px;
-  font-size: 1.3rem;
-}
-
-.achievement-box ul {
-  padding-left: 20px;
-}
-
-.achievement-box li {
-  margin-bottom: 10px;
+  padding: 24px;
+  margin-top: 24px;
 }
 
 /* =========================
-   スケジュール
-========================= */
-
-.schedule-section {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-.schedule-card {
-  background: #fff;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-.schedule-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #5c4b51;
-}
-
-.schedule-list {
-  list-style: none;
-  padding: 0;
-}
-
-.schedule-list li {
-  padding: 12px 0;
-  border-bottom: 1px solid #eee;
-}
-
-/* =========================
-   お問い合わせ
+   CONTACT
 ========================= */
 
 .contact-section {
@@ -365,35 +256,17 @@ img {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.contact-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #444;
-}
-
-.contact-section p {
-  font-size: 1.1rem;
-  line-height: 2;
-  margin-bottom: 35px;
-}
-
 .line-btn {
   display: inline-block;
   background: #7bc89c;
   color: #fff;
-  padding: 18px 40px;
+  padding: 16px 36px;
   border-radius: 999px;
   font-weight: bold;
-  transition: 0.3s;
-}
-
-.line-btn:hover {
-  transform: translateY(-3px);
-  opacity: 0.9;
 }
 
 /* =========================
-   スマホ対応
+   MOBILE
 ========================= */
 
 @media (max-width: 768px) {
@@ -408,7 +281,7 @@ img {
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .hero-text {
