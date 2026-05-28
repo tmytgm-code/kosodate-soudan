@@ -487,3 +487,33 @@ img {
 .nav-highlight:hover::after {
   transform: scaleX(1);
 }
+.page-hero {
+  background: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.page-hero h2 {
+  font-size: 2rem;
+  color: #d97b92;
+  margin-bottom: 10px;
+}
+
+.page-hero p {
+  color: #666;
+}
+
+.content-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.content-section h3 a {
+  color: #333;
+  transition: 0.3s;
+}
+
+.content-section h3 a:hover {
+  color: #d97b92;
+}
