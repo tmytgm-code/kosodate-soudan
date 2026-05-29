@@ -356,7 +356,10 @@ img {
   }
 }
 .report-card {
-padding-bottom: 30px;
-margin-bottom: 30px;
+display: block;
+padding: 30px 0;
+margin-bottom: 20px;
 border-bottom: 1px solid #ddd;
+text-decoration: none;
+color: #333;
 }
