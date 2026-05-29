@@ -355,3 +355,28 @@ img {
     gap: 10px;
   }
 }
+.report-card {
+display: block;
+background: #fff;
+padding: 30px;
+margin-bottom: 30px;
+border-radius: 20px;
+
+/* ここが線 */
+border: 1px solid #e5e5e5;
+
+box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+
+text-decoration: none;
+color: #333;
+
+transition: 0.3s;
+}
+
+.report-card:hover {
+transform: translateY(-4px);
+
+border: 1px solid #d8cfcf;
+
+box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
