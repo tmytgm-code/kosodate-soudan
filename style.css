@@ -507,3 +507,88 @@ img {
     padding: 20px;
   }
 }
+
+/* =========================
+   HEADER LOGO
+========================= */
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========================
+   REPORT THUMB
+========================= */
+
+.report-thumb {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* =========================
+   CTA SECTION
+========================= */
+
+.cta-section {
+  background: linear-gradient(
+    135deg,
+    #fff7f8,
+    #f8f7f4
+  );
+  text-align: center;
+  padding: 70px 20px;
+  margin: 40px 0;
+}
+
+.cta-section h2 {
+  color: #d97b92;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  margin-bottom: 25px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .logo img {
+    height: 60px;
+  }
+
+  .logo a {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .staff-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .staff-image {
+    width: 220px;
+  }
+
+  .content-section {
+    padding: 35px 20px;
+  }
+}
