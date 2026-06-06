@@ -516,30 +516,30 @@ img {
 .logo a {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   text-decoration: none;
 }
 
 .logo img {
+  width: 80px;
   height: 80px;
-  width: auto;
+  object-fit: contain;
 }
 
 .logo-text {
   display: flex;
   flex-direction: column;
-  white-space: nowrap;
   line-height: 1.2;
 }
 
 .logo-sub {
-  font-size: 14px;
+  font-size: 15px;
   color: #666;
   font-weight: 500;
 }
 
 .logo-main {
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 700;
   color: #333;
 }
@@ -579,6 +579,18 @@ img {
   margin-bottom: 25px;
 }
 
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  min-width: 180px;
+}
+
+.logo-main {
+  font-size: 32px;
+  font-weight: 700;
+}
+
 /* =========================
    MOBILE
 ========================= */
@@ -587,11 +599,25 @@ img {
 
   .logo img {
     height: 60px;
+    width: auto;
   }
 
   .logo a {
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .logo-text {
+    min-width: auto;
+  }
+
+  .logo-sub {
+    font-size: 12px;
+  }
+
+  .logo-main {
+    font-size: 24px;
   }
 
   .hero-title {
@@ -612,16 +638,4 @@ img {
   .content-section {
     padding: 35px 20px;
   }
-}
-
-.logo-sub {
-  font-size: 12px;
-}
-
-.logo-main {
-  font-size: 24px;
-}
-
-.logo img {
-  height: 60px;
 }
