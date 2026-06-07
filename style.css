@@ -87,9 +87,14 @@ img {
 /* 現在ページ */
 
 .nav a.active {
-  background: rgba(242, 182, 198, 0.25);
+  background: transparent;
   color: #d97b92;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.nav a:hover {
+  background: transparent;
+  color: #d97b92;
 }
 
 /* 月額サポート */
