@@ -261,11 +261,11 @@ img {
 .achievement-box h3 {
   background: linear-gradient(135deg, #f2b6c6, #e58ca0);
   color: #fff;
-  padding: 14px 20px;
-  border-radius: 12px;
+  padding: 10px 16px;
+  border-radius: 10px;
   text-align: center;
-  font-size: 1.5rem;
-  margin: -20px -20px 20px;
+  font-size: 1.2rem;
+  margin: -20px -20px 15px;
 }
 
 /* =========================
