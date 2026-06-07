@@ -197,6 +197,12 @@ img {
   color: #e58ca0;
 }
 
+.content-section h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
 .content-section p {
   margin-bottom: 15px;
 }
@@ -583,14 +589,6 @@ img {
 .logo-main {
   font-size: 32px;
   font-weight: 700;
-}
-
-.plan-price {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #d97b92;
-  margin-bottom: 20px;
 }
 
 /* =========================
