@@ -258,6 +258,15 @@ img {
   margin-top: 20px;
 }
 
+.achievement-box h3 {
+  background: none;
+  color: #d97b92;
+  border-left: 4px solid #d97b92;
+  padding-left: 12px;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
 /* =========================
    CONTACT
 ========================= */
