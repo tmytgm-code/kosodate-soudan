@@ -591,6 +591,14 @@ img {
   font-weight: 700;
 }
 
+.plan-price {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d97b92;
+  margin-bottom: 20px;
+}
+
 /* =========================
    MOBILE
 ========================= */
