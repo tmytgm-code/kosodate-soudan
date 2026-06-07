@@ -88,8 +88,8 @@ img {
 
 .nav a.active {
   background: transparent;
-  color: #d97b92;
-  font-weight: 700;
+  color: #555;
+  font-weight: normal;
 }
 
 /* 月額サポート */
