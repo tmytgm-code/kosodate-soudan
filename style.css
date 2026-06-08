@@ -592,15 +592,14 @@ img {
 }
 
 .plan-title{
-display:block;
+display:inline-block;
 background:#d98ca2;
 color:#fff;
-padding:15px;
-text-align:center;
-font-size:1.5rem;
+padding:12px 28px;
+border-radius:999px;
+font-size:1.3rem;
 font-weight:700;
-border-radius:12px;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 /* =========================
