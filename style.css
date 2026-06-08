@@ -591,15 +591,15 @@ img {
   font-weight: 700;
 }
 
-.plan-title {
-  display: inline-block;
-  background: #f8e3e8;
-  color: #d97b92;
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+.plan-title{
+display:inline-block;
+background:#d98ca2;
+color:#fff;
+padding:12px 28px;
+border-radius:999px;
+font-size:1.3rem;
+font-weight:700;
+margin-bottom:15px;
 }
 
 /* =========================
